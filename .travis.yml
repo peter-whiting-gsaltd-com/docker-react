@@ -11,16 +11,16 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "eu-west-2"
-  app: "docker-react"
-  env: "DockerReact-env"
+  app: "test-docker2"
+  env: "TestDocker-env"
   bucket_name: "elasticbeanstalk-eu-west-2-331141108008"
-  bucket_path: "docker-react"
+  bucket_path: "test-docker2"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
 
-  #test comment test new permissions Test remove ECS permissions.
+  #test comment test new permissions Test remove ECS permissions change env fro, Multi-Container
 
 
 
